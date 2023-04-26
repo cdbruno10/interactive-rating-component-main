@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="containerA">
+    <div id="containerA">
       <div class="star__container">
         <img src="./images/icon-star.svg" alt="Icono de una estrella" />
       </div>
@@ -44,12 +44,12 @@
         </ul>
       </div>
 
-      <button type="submit">Submit</button>
+      <button id="summary" type="submit">Submit</button>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="containerB">
+    <div id="containerB">
       <div class="img__containerB">
         <img
           src="./images/illustration-thank-you.svg"
@@ -57,9 +57,8 @@
         />
       </div>
       <div class="result__container">
-        <sppan class="title__resultA">You selected</sppan>
         <!-- Add rating here -->
-        <span class="title__resultB">out of 5</span>
+        <p>You selected <span id="rating"></span> out of 5</p>
       </div>
 
       <h3 class="title__thank">Thank you!</h3>
@@ -77,5 +76,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/cdbruno10">CDBruno10</a>.
     </div>
+    <script src="./js/js.js"></script>
   </body>
 </html>
